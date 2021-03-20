@@ -12,10 +12,10 @@
 
 .buttons-list__item {
   margin-right: 8px;
-}
 
-.buttons-list__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .buttons-list__btn {
@@ -37,14 +37,14 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-}
 
-.buttons-list__btn:hover,
-.buttons-list__btn:focus {
-  color: $white-text;
-  background-color: $blue-text;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: $white-text;
+    background-color: $blue-text;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .visually-hidden {
@@ -69,19 +69,19 @@
   background-color: $bg-white;
   border: 1px solid $border-card;
   transition: box-shadow 250ms $timing-function;
-}
 
-.cards__item:nth-child(3n) {
-  margin-right: 0;
-}
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
-.cards__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 
-.cards__item:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .cards__txt-box {
@@ -119,11 +119,11 @@
   background-color: $blue-overlay-op90;
   transform: translateY(100%);
   transition: transform 250ms $timing-function;
-}
 
-.cards__item:hover .overlay {
-  transform: translateY(0);
-  opacity: 1;
+  .cards__item:hover & {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .overlay__text {

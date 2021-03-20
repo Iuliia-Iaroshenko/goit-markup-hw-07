@@ -54,12 +54,12 @@
   background-color: $bg-white;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.btn-modal-close:hover,
-.btn-modal-close:focus {
-  cursor: pointer;
-  fill: $blue-text;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $blue-text;
+  }
 }
 
 .modal__field {
@@ -96,9 +96,7 @@
   color: $grey-text;
 }
 
-.modal-form__input:focus ~ .icon-modal-person,
-.modal-form__input:focus ~ .icon-modal-phone,
-.modal-form__input:focus ~ .icon-modal-mail {
+.modal-form__input:focus ~ .modal-form__icon {
   fill: $blue-text;
 }
 
@@ -114,6 +112,10 @@
   left: 12px;
   transform: translateY(-50%);
   fill: inherit;
+
+  .modal-form__input:focus ~ & {
+    fill: $blue-text;
+  }
 }
 
 /* label со сдвигом над input*/
@@ -186,11 +188,11 @@
   height: 15px;
   align-items: center;
   border: 1px solid $black-text;
-}
 
-.modal-confirm__checkbox:checked + .modal-confirm__icon {
-  background-color: $blue-text;
-  border: none;
+  .modal-confirm__checkbox:checked + & {
+    background-color: $blue-text;
+    border: none;
+  }
 }
 
 .modal-confirm__label {
@@ -214,11 +216,11 @@
 
 .btn-confirm {
   margin: 0 120px;
-}
 
-.btn-confirm:hover,
-.btn-confirm:focus {
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }

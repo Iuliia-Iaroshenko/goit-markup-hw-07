@@ -12,10 +12,10 @@
   position: relative;
   margin-right: 30px;
   flex-basis: calc((100% - 60px) / 3);
-}
 
-.directions-list__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .directions-list__text {

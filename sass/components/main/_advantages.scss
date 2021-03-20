@@ -12,16 +12,16 @@
 .advantages-list__item {
   margin-right: 30px;
   flex-basis: calc((100% - 90px) / 4);
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .advantages-list__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.advantages-list__item:last-child {
-  margin-right: 0px;
 }
 
 .advantages-list__card {

@@ -12,10 +12,10 @@
 .clients-list__item {
   margin-right: 30px;
   flex-basis: calc((100% - 150px) / 6);
-}
 
-.clients-list__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .clients-list__link {
@@ -32,20 +32,20 @@
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-}
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-  color: $blue-text;
-  border: 1px solid $blue-text;
+  &:hover,
+  &:focus {
+    color: $blue-text;
+    border: 1px solid $blue-text;
+  }
 }
 
 .clients-list__icon {
   display: flex;
   align-items: center;
   fill: currentColor;
-}
 
-.clients-list__icon:hover {
-  fill: $blue-text;
+  &:hover {
+    fill: $blue-text;
+  }
 }
